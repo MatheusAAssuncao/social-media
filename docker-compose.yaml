@@ -1,6 +1,7 @@
 version: '3.3'
 services:
     laravel-docker:
+        container_name: laravel-docker
         build: ./
         ports:
             - 9001:80
@@ -12,6 +13,7 @@ services:
         networks:
             - laravel-network
     database-docker:
+        container_name: database-docker
         image: mysql
         volumes:
             - ./dbdata/:/var/lib/mysql/

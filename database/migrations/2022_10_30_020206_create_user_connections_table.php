@@ -29,10 +29,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('users_connections', function (Blueprint $table) {
-            $table->dropColumn(['user_id', 'friend_id']);
-        });
-
-        Schema::dropIfExists('users_connections');
+        Schema::disableForeignKeyConstraints();
+        Schema::dropIfExists('user_connections');
     }
 };

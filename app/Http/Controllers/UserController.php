@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class UserController extends Controller
 {
@@ -13,7 +15,22 @@ class UserController extends Controller
      */
     public function index()
     {
-        echo "teste 2";
+        $_users = User::all();
+        print_r($_users); exit;
+        $data = [
+            'friends' => [
+                ['firstName' => 'Jane', 'surname' => 'Warren'],
+                ['firstName' => 'John', 'surname' => 'Doe'],
+                ['firstName' => 'Marcos', 'surname' => 'Lucas'],
+                ['firstName' => 'Rita', 'surname' => 'Pegorari'],
+                ['firstName' => 'Maria', 'surname' => 'Gonçalves'],
+                ['firstName' => 'Juliano', 'surname' => 'Santos'],
+                ['firstName' => 'Jeremias', 'surname' => 'Duarte'],
+                ['firstName' => 'Matheus', 'surname' => 'Gomes'],
+            ],
+        ];
+
+        return Inertia::render('Home', $data);
     }
 
     /**
