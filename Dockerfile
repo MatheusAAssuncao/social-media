@@ -12,6 +12,5 @@ RUN apt-get install -y nodejs
 RUN apt-get install -y npm
 
 RUN npm install -y
-RUN npm run watch-poll
 
 EXPOSE 80
