@@ -15,19 +15,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $_users = User::all();
-        print_r($_users); exit;
+        $_users = User::all()->toArray();
+
         $data = [
-            'friends' => [
-                ['firstName' => 'Jane', 'surname' => 'Warren'],
-                ['firstName' => 'John', 'surname' => 'Doe'],
-                ['firstName' => 'Marcos', 'surname' => 'Lucas'],
-                ['firstName' => 'Rita', 'surname' => 'Pegorari'],
-                ['firstName' => 'Maria', 'surname' => 'Gonçalves'],
-                ['firstName' => 'Juliano', 'surname' => 'Santos'],
-                ['firstName' => 'Jeremias', 'surname' => 'Duarte'],
-                ['firstName' => 'Matheus', 'surname' => 'Gomes'],
-            ],
+            'friends' => $_users,
         ];
 
         return Inertia::render('Home', $data);
