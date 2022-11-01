@@ -41,8 +41,6 @@ Check .env file to see the connection informations.
 ##### 2. Test coverage
 ##### 3. Create layout
 ##### 4. Planning: the sky is the limit!
-#
-#
-#
+
 > Note: project suggested by the Landbell Group and developed by me (:
 
