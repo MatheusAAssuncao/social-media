@@ -20,7 +20,11 @@ Inside the project folder, run:
 ```sh
 docker-compose up --build -d
 ```
-Then, enter into docker container to execute Laravel migration and create the database structure
+When the process is finished, it is possible check two containers: laravel-docker (Nginx, PHP, Node, Composer) and laravel-database (MySql).
+```sh
+docker ps
+```
+Then, enter into laravel-docker container to execute Laravel migration and create the database structure
 ```sh
 docker exec -it laravel-docker bash
 ```
@@ -30,7 +34,7 @@ php artisan migrate:refresh --seed
 ```
 It is done!
 From outside of the container, Nginx server is visible on http://localhost:9001 and MySql on localhost:9002.
-Check .env file to see the connection informations.
+Check .env file to see the connection informations if you want to see data through SGBD.
 ## To do
 
 ##### 1. Implement cities rating
