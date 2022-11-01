@@ -5,12 +5,21 @@ body {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .container {
     margin: 10px 35px 10px 35px;
 }
 
 .row {
     padding: 15px 0px 15px 0px;
+}
+
+.menu a {
+    margin-right: 15px;
 }
 
 .page-header {
@@ -42,13 +51,14 @@ li {
     justify-content: center;
 }
 
-li:hover {
-    color: blue;
-}
-
 li .name {
     font-weight: bold;
     font-size: large;
+    color: black;
+}
+
+li .age {
+    color: black;
 }
 
 small {

@@ -26476,13 +26476,21 @@ function compileToFunction(template, options) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./Connections": [
-		"./resources/js/Pages/Connections.vue",
-		"resources_js_Pages_Connections_vue"
+	"./Friends": [
+		"./resources/js/Pages/Friends.vue",
+		"resources_js_Pages_Friends_vue"
 	],
-	"./Connections.vue": [
-		"./resources/js/Pages/Connections.vue",
-		"resources_js_Pages_Connections_vue"
+	"./Friends.vue": [
+		"./resources/js/Pages/Friends.vue",
+		"resources_js_Pages_Friends_vue"
+	],
+	"./FriendsOfFriend": [
+		"./resources/js/Pages/FriendsOfFriend.vue",
+		"resources_js_Pages_FriendsOfFriend_vue"
+	],
+	"./FriendsOfFriend.vue": [
+		"./resources/js/Pages/FriendsOfFriend.vue",
+		"resources_js_Pages_FriendsOfFriend_vue"
 	],
 	"./Home": [
 		"./resources/js/Pages/Home.vue",
@@ -26629,7 +26637,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Connections_vue":1,"resources_js_Pages_Home_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Friends_vue":1,"resources_js_Pages_FriendsOfFriend_vue":1,"resources_js_Pages_Home_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

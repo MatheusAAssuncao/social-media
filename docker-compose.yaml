@@ -5,6 +5,7 @@ services:
         build: 
             context: .
             dockerfile: ./docker/nginx/Dockerfile
+        user: root
         ports:
             - 9001:80
         volumes:
@@ -19,6 +20,7 @@ services:
         build: 
             context: .
             dockerfile: ./docker/mysql/Dockerfile
+        user: root
         # volumes:
         #     - ./dbdata/:/var/lib/mysql
         ports:

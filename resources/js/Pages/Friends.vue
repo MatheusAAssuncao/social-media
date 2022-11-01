@@ -1,12 +1,11 @@
 <template>
-    
     <div class="container">
         <div class="row menu">
             <Link href="/">Home</Link>
         </div>
         <div class="row">
             <div class="page-header">
-                <h1>List of users</h1>
+                <h1>{{ user.firstName }} {{ user.surname }} direct friends</h1>
                 <hr>
             </div>
         </div>
@@ -14,17 +13,17 @@
     <div class="container">
         <div class="row">
             <ul>
-                <div v-for="user in users">
-                    <Link v-bind:href="'/friends/' + user.id">
+                <div v-for="friend in friends">
+                    <Link v-bind:href="'/friends-of-friend/' + user.id + '/' + friend.id">
                         <li>
                             <div class="name">
-                                {{ user.firstName }} {{ user.surname }}
+                                {{ friend.firstName }} {{ friend.surname }}
                             </div>
                             <div class="age">
-                                {{ user.age }} years old
+                                {{ friend.age }} years old
                             </div>
                             <div class="gender">
-                                <small>{{ user.gender }}</small>
+                                <small>{{ friend.gender }}</small>
                             </div>
                         </li>
                     </Link>
@@ -37,7 +36,8 @@
 <script>
     export default {
         props: {
-            users: Array
+            user: Array,
+            friends: Array,
         }
     }
 </script>
