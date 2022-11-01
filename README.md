@@ -50,3 +50,14 @@ Check .env file to see the connection informations if you want to see data throu
 
 > Note: project suggested by the <a href="https://landbell-group.com/" target="_blank">Landbell Group</a> and developed by me (:
 
+## Util
+Docker commands to stop and remove all images and containers:
+```sh
+docker stop $(docker ps -a -q)
+```
+```sh
+docker rmi -f $(docker images -aq)
+```
+```sh
+docker system prune -a -f
+```
