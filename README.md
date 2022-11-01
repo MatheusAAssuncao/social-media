@@ -42,5 +42,5 @@ Check .env file to see the connection informations.
 ##### 3. Create layout
 ##### 4. Planning: the sky is the limit!
 <br>
-> Note: project suggested by the [**Landbell Group.**](https://landbell-group.com/) and developed by me (:
+> Note: project suggested by the <a href="https://landbell-group.com/" target="_blank">Landbell Group</a> and developed by me (:
 
