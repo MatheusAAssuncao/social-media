@@ -21,8 +21,6 @@ services:
             context: .
             dockerfile: ./docker/mysql/Dockerfile
         user: root
-        # volumes:
-        #     - ./dbdata/:/var/lib/mysql
         ports:
             - 9002:3306
         environment:

@@ -15,9 +15,4 @@ class User extends Model
         'age',
         'gender',
     ];
-
-    public function friends()
-    {
-        return $this->hasMany(UserConnection::class, 'friend_id', 'user_id');
-    }
 }

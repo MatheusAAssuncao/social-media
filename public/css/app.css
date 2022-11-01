@@ -19,6 +19,7 @@ a {
 
 .menu a {
     margin-right: 15px;
+    font-weight: bold;
 }
 
 .page-header {
@@ -40,6 +41,7 @@ ul {
     align-items: center;
     justify-content: space-around;
     list-style-type: none;
+    padding: 0px;
 }
 
 li {
