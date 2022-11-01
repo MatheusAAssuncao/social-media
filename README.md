@@ -45,8 +45,8 @@ Check .env file to see the connection informations if you want to see data throu
 ##### 2. Test coverage
 ##### 3. Create layout
 ##### 4. Planning: the sky is the limit!
-<br>
+
 > Note: This guide was made to facilitate the visualization and is not prepared for development. To continue the development, node and composer are required, also some changes in dockerfiles/docker-compose.yaml like sharing Laravel and database volumes between container and host.
-<br>
+
 > Note: project suggested by the <a href="https://landbell-group.com/" target="_blank">Landbell Group</a> and developed by me (:
 
