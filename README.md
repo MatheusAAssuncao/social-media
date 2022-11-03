@@ -34,7 +34,7 @@ php artisan migrate:refresh --seed
 ```
 It is done!
 From outside of the container, Nginx server is visible on http://localhost:9001 and MySql on localhost:9002.
-Check .env file to see the connection informations if you want to see data through SGBD.
+Check .env file to see the connection informations if you want to see data through DBMS.
 ## To do
 
 ##### 1. Implement cities rating
